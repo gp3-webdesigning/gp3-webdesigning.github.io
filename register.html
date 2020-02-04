@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register!</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link rel="stylesheet" href="res/fontawesome-free-5.12.0-web/css/all.css">
+    <link href="res\css\register.css" rel="stylesheet">
+    <link href="res\css\bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="brand"><span id="domain_name"></span><span id="event_name"></span></h1>
+      <div class="wrapper">
+        <div class="company-info">
+          <h4>Contact coordinators</h4><br>
+            <h6 id="phone_no_1"><i class="fa fa-phone"></i> 7709 0136 </h6>
+            <h6 id="phone_no_2"><i class="fa fa-phone"></i> 7709 0136 </h6>
+        </div>
+        <div class="contact">
+          <h2>Register!</h2>
+          <h4>Event Name</h4>
+          <div class="alert" id="alert">You have been registered!, our coordinators will contact you for registration fee shortly.  </div>
+
+          <form id="registerForm">
+            <div class="form-group row">
+              <div class="col-md-10">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-10">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-6">
+                <label for="number">Mobile No.</label>
+                <input type="text" class="form-control" id="number">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-8">
+                <label for="college">College</label>
+                <input type="text" class="form-control" id="college">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-4">
+                <label for="course">Degree</label>
+                <select id="course" class="form-control">
+                  <option selected>B.E</option>
+                  <option>M.Tech</option>
+                  <option>MBA</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="course">Sem</label>
+                <select id="sem" class="form-control">
+                  <option selected>I</option>
+                  <option>II</option>
+                  <option>III</option>
+                  <option>IV</option>
+                  <option>V</option>
+                  <option>VI</option>
+                  <option>VII</option>
+                  <option>VIII</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="course">Section</label>
+                <select id="section" class="form-control">
+                  <option selected>A</option>
+                  <option>B</option>
+                  <option>C</option>
+                  <option>D</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="course">Event</label>
+                <select id="event" class="form-control">
+                  <option selected>...</option>
+                  <option>Pool</option>
+                  <option>Chess</option>
+                  <option>Carrom</option>
+                  <option>Table Tenis</option>
+                  <option>Football(mens)</option>
+                  <option>Volleyball</option>
+                  <option>Tug Of War</option>
+                  <option>Throwball(womens)</option>
+                  <option>Basketball</option>
+                  <option>Badminton</option>
+                  <option>Handball(Mens)</option>
+                  <option>Kho-Kho(Womens)</option>
+                  <option>Cricket</option>
+                  <option>Kabbadi</option>
+                  <option>Sepak Takraw(Mens)</option>
+                  <option>Relay-Race</option>
+                  <option>Futsal</option>
+                  <option>Building Blocks</option>
+                  <option>Tower Making</option>
+                  <option>Logo Quiz</option>
+                  <option>Technical Treasure Hunt</option>
+                  <option>Four Hand Assembly</option>
+                  <option>How Things Work</option>
+                  <option>Technical Marathon</option>
+                  <option>Code War</option>
+                  <option>Robo Block</option>
+                  <option>Mesmerize</option>
+                  <option>Vice Clutch</option>
+                  <option>Lan Gaming</option>
+                  <option>Pubg</option>
+                  <option>Junkyard</option>
+                  <option>Googler</option>
+                  <option>Catia design contest</option>
+                  <option>impromptu design challenge</option>
+                  <option>Monostroke</option>
+                  <option>Mehfil-E-Antaragni</option>
+                  <option>Singing</option>
+                  <option>Box-Cricket</option>
+                  <option>Masterchef</option>
+                  <option>Art Attack</option>
+                  <option>The Talent Show</option>
+                  <option>Smiling Faces (selfie contest)</option>
+                  <option>The 60-second show down</option>
+                  <option>Spell Bee</option>
+                  <option>Rock-Band</option>
+                  <option>Rangpeeth</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script src="res\js\jquery.min.js"></script>
+    <script src="res\js\bootstrap.min.js"></script>
+    <script src="res\js\register.js"></script>
+  </body>
+</html>
